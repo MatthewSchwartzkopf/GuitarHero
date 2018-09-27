@@ -1,8 +1,8 @@
 
-public class Stage implements Act{
+public class Stage implements Act {
 
-	public Stage() {
-		// TODO Auto-generated constructor stub
+	@Override
+	public void act() {
+		System.out.println("jumped off the stage!!!!!!");
 	}
-
 }
