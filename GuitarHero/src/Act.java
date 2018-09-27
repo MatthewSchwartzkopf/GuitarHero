@@ -1,8 +1,5 @@
 
-public class Act {
+public interface Act {
 
-	public Act() {
-		// TODO Auto-generated constructor stub
-	}
 
 }

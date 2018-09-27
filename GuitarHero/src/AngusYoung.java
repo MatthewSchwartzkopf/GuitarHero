@@ -1,8 +1,5 @@
 
-public class AngusYoung extends Character{
+public class AngusYoung implements Character{
 
-	public AngusYoung() {
-		// TODO Auto-generated constructor stub
-	}
 
 }

@@ -1,8 +1,6 @@
 
-public class Guitar {
+public interface Guitar {
 
-	public Guitar() {
-		// TODO Auto-generated constructor stub
-	}
+	
 
 }

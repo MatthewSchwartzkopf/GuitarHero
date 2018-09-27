@@ -1,5 +1,5 @@
 
-public class Stage extends Act{
+public class Stage implements Act{
 
 	public Stage() {
 		// TODO Auto-generated constructor stub

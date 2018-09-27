@@ -1,5 +1,5 @@
 
-public class FenderTelecaster extends Guitar{
+public class FenderTelecaster implements Guitar{
 
 	public FenderTelecaster() {
 		// TODO Auto-generated constructor stub
