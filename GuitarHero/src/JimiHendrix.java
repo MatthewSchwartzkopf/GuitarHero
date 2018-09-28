@@ -1,8 +1,8 @@
 
 public class JimiHendrix implements Character {
 
-	static String JimiGuitar = null;
-	static String JimiAct = null;
+	String JimiGuitar = null;
+	String JimiAct = null;
 	
 	public JimiHendrix() {
 		// Sets default values
@@ -21,10 +21,6 @@ public class JimiHendrix implements Character {
 		Act.fire();
 	}
 
-	@Override
-	public void guitarType() {
-		Guitar.FenderTelecaster();
-	}
 
 	@Override
 	public void changeGuitar(GibsonSG type) {

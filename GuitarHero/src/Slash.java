@@ -3,7 +3,7 @@ public class Slash implements Character {
 
 	String SlashGuitar = null;
 	String SlashAct = null;
-	
+
 	public Slash() {
 		// Sets default values
 		SlashGuitar = GibsonSG.GibsonSG;
@@ -22,31 +22,26 @@ public class Slash implements Character {
 	}
 
 	@Override
-	public void guitarType() {
-		Guitar.GibsonSG();
-	}
-
-	@Override
 	public void changeGuitar(GibsonSG guitar) {
-		SlashGuitar = guitar.GibsonSG;
+		SlashGuitar = GibsonSG.GibsonSG;
 		System.out.println("Slash switch to a " + SlashGuitar);
 	}
 
 	@Override
 	public void changeGuitar(GibsonFlyingV guitar) {
-		SlashGuitar = guitar.GibsonFlyingV;
+		SlashGuitar = GibsonFlyingV.GibsonFlyingV;
 		System.out.println("Slash switch to a " + SlashGuitar);
 	}
 
 	@Override
 	public void changeGuitar(FenderTelecaster guitar) {
-		SlashGuitar = guitar.FenderTelecaster;
+		SlashGuitar = FenderTelecaster.FenderTelecaster;
 		System.out.println("Slash switched to a " + SlashGuitar);
 	}
 
 	@Override
 	public void changeSoloAct(Smash smash) {
-		SlashAct = smash.smash;
+		SlashAct = Smash.smash;
 		System.out.println("Slash switched his Solo Act to " + SlashAct);
 		Act.smash();
 
@@ -54,14 +49,14 @@ public class Slash implements Character {
 
 	@Override
 	public void chagenSoloAct(Stage stage) {
-		SlashAct = stage.stage;
+		SlashAct = Stage.stage;
 		System.out.println("Slash switched his Solo Act to " + SlashAct);
 		Act.stage();
 	}
 
 	@Override
 	public void changeSoloAct(Fire fire) {
-		SlashAct = fire.fire;
+		SlashAct = Fire.fire;
 		System.out.println("Slash switched his Solo Act to " + SlashAct);
 		Act.fire();
 

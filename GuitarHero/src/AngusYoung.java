@@ -1,8 +1,8 @@
 
 public class AngusYoung implements Character {
 
-	static String AngusGuitar = null;
-	static String AngusAct = null;
+	String AngusGuitar = null;
+	String AngusAct = null;
 
 	public AngusYoung() {
 		AngusGuitar = FenderTelecaster.FenderTelecaster;
@@ -12,11 +12,6 @@ public class AngusYoung implements Character {
 	@Override
 	public void playGuitar() {
 		System.out.println("Angus Young is playing!");
-	}
-
-	@Override
-	public void guitarType() {
-		Guitar.GibsonFlyingV();
 	}
 
 	@Override
@@ -47,20 +42,20 @@ public class AngusYoung implements Character {
 
 	@Override
 	public void changeSoloAct(Smash smash) {
-		System.out.println("Angus Young switched her Solo Act to " + smash.smash);
+		System.out.println("Angus Young switched her Solo Act to " + Smash.smash);
 		Act.smash();
 
 	}
 
 	@Override
 	public void chagenSoloAct(Stage stage) {
-		System.out.println("Angus Young switched her Solo Act to " + stage.stage);
+		System.out.println("Angus Young switched her Solo Act to " + Stage.stage);
 		Act.stage();
 	}
 
 	@Override
 	public void changeSoloAct(Fire fire) {
-		System.out.println("Angus Young switched her Solo Act to " + fire.fire);
+		System.out.println("Angus Young switched her Solo Act to " + Fire.fire);
 		Act.fire();
 
 	}

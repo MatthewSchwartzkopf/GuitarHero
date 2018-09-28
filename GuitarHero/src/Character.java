@@ -7,8 +7,6 @@ public interface Character {
 
 	public void act();
 
-	public void guitarType();
-
 	void changeGuitar(GibsonSG gibsonSG);
 
 	void changeGuitar(GibsonFlyingV type);
