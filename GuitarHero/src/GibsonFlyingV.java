@@ -1,7 +1,7 @@
 
 public class GibsonFlyingV implements Guitar {
 
-	String GibsonFlyingV = "GibsonFlyingV";
+	static String GibsonFlyingV = "GibsonFlyingV";
 
 	public GibsonFlyingV() {
 		// TODO Auto-generated constructor stub

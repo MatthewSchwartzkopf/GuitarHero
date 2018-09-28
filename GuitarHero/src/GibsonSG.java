@@ -1,7 +1,7 @@
 
 public class GibsonSG implements Guitar {
 
-	String GibsonSG = "GibsonSG";
+	static String GibsonSG = "GibsonSG";
 
 	public GibsonSG() {
 		// TODO Auto-generated constructor stub

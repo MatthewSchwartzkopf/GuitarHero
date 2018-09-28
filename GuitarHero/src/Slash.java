@@ -1,8 +1,13 @@
 
 public class Slash implements Character {
 
+	String SlashGuitar = null;
+	String SlashAct = null;
+	
 	public Slash() {
-		// TODO Auto-generated constructor stub
+		// Sets default values
+		SlashGuitar = GibsonSG.GibsonSG;
+		SlashAct = Stage.stage;
 	}
 
 	@Override
@@ -23,16 +28,42 @@ public class Slash implements Character {
 
 	@Override
 	public void changeGuitar(GibsonSG guitar) {
-		System.out.println("Slash switch to a " + guitar.GibsonSG);
+		SlashGuitar = guitar.GibsonSG;
+		System.out.println("Slash switch to a " + SlashGuitar);
 	}
 
 	@Override
 	public void changeGuitar(GibsonFlyingV guitar) {
-		System.out.println("Slash switch to a " + guitar.GibsonFlyingV);
+		SlashGuitar = guitar.GibsonFlyingV;
+		System.out.println("Slash switch to a " + SlashGuitar);
 	}
 
 	@Override
 	public void changeGuitar(FenderTelecaster guitar) {
-		System.out.println("Slash switched to a " + guitar.FenderTelecaster);
+		SlashGuitar = guitar.FenderTelecaster;
+		System.out.println("Slash switched to a " + SlashGuitar);
+	}
+
+	@Override
+	public void changeSoloAct(Smash smash) {
+		SlashAct = smash.smash;
+		System.out.println("Slash switched his Solo Act to " + SlashAct);
+		Act.smash();
+
+	}
+
+	@Override
+	public void chagenSoloAct(Stage stage) {
+		SlashAct = stage.stage;
+		System.out.println("Slash switched his Solo Act to " + SlashAct);
+		Act.stage();
+	}
+
+	@Override
+	public void changeSoloAct(Fire fire) {
+		SlashAct = fire.fire;
+		System.out.println("Slash switched his Solo Act to " + SlashAct);
+		Act.fire();
+
 	}
 }

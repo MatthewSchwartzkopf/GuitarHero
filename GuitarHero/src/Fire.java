@@ -1,6 +1,8 @@
 
 public class Fire implements Act {
 
+	static String fire = "Fire";
+
 	public Fire() {
 		// TODO Auto-generated constructor stub
 	}
