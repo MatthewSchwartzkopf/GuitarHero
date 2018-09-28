@@ -2,7 +2,7 @@
 public interface Character {
 
 	Slash slash = new Slash();
-	
+
 	public void playGuitar();
 
 	public void act();

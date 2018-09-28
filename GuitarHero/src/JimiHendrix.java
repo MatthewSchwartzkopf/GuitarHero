@@ -3,7 +3,8 @@ public class JimiHendrix implements Character {
 
 	String JimiGuitar = null;
 	String JimiAct = null;
-	
+	String JimiName = "Jimi Hendrix";
+			
 	public JimiHendrix() {
 		// Sets default values
 		JimiGuitar = GibsonFlyingV.GibsonFlyingV;
@@ -12,15 +13,18 @@ public class JimiHendrix implements Character {
 
 	@Override
 	public void playGuitar() {
-		// TODO Auto-generated method stub
+		System.out.println("Jimi Hendrix is playing!");
 	}
 
 	@Override
 	public void act() {
-		System.out.println("Jimi Hendrix ");
-		Act.fire();
+		if (JimiAct == Fire.fire)
+			Act.fire(JimiName);
+		else if (JimiAct == Smash.smash)
+			Act.smash(JimiName);
+		else
+			Act.stage(JimiName);
 	}
-
 
 	@Override
 	public void changeGuitar(GibsonSG type) {
@@ -44,7 +48,6 @@ public class JimiHendrix implements Character {
 	public void changeSoloAct(Smash smash) {
 		JimiAct = Smash.smash;
 		System.out.println("Jimi Hendrix switched his Solo Act to " + Smash.smash);
-		Act.smash();
 
 	}
 
@@ -52,7 +55,6 @@ public class JimiHendrix implements Character {
 	public void chagenSoloAct(Stage stage) {
 		JimiAct = Stage.stage;
 		System.out.println("Jimi Hendrix switched his Solo Act to " + Stage.stage);
-		Act.stage();
 
 	}
 
@@ -60,7 +62,6 @@ public class JimiHendrix implements Character {
 	public void changeSoloAct(Fire fire) {
 		JimiAct = Fire.fire;
 		System.out.println("Slash switched his Solo Act to " + Fire.fire);
-		Act.fire();
 
 	}
 

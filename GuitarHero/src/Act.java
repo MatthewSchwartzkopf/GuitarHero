@@ -5,20 +5,20 @@ public interface Act {
 	Act smash = new Smash();
 	Act stage = new Stage();
 
-	public void act();
+	public void act(String name);
 
-	static void smash() {
+	static void smash(String name) {
 		// TODO Auto-generated method stub
-		smash.act();
+		smash.act(name);
 	}
 
-	static void fire() {
-		fire.act();
+	static void fire(String name) {
+		fire.act(name);
 	}
 
-	static void stage() {
+	static void stage(String name) {
 		// TODO Auto-generated method stub
-		stage.act();
+		stage.act(name);
 	}
 
 }

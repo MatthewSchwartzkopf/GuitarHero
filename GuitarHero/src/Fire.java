@@ -8,8 +8,8 @@ public class Fire implements Act {
 	}
 
 	@Override
-	public void act() {
-		System.out.println("set the guitar on fire!");
+	public void act(String name) {
+		System.out.println(name + " set the guitar on fire!");
 	}
 
 }

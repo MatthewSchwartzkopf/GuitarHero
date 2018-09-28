@@ -3,7 +3,7 @@ public class Slash implements Character {
 
 	String SlashGuitar = null;
 	String SlashAct = null;
-
+	String SlashName = "Slash";
 	public Slash() {
 		// Sets default values
 		SlashGuitar = GibsonSG.GibsonSG;
@@ -17,8 +17,12 @@ public class Slash implements Character {
 
 	@Override
 	public void act() {
-		System.out.println("Slash ");
-		Act.stage();
+		if (SlashAct == Fire.fire)
+			Act.fire(SlashName);
+		else if (SlashAct == Smash.smash)
+			Act.smash(SlashName);
+		else
+			Act.stage(SlashName);
 	}
 
 	@Override
@@ -43,22 +47,18 @@ public class Slash implements Character {
 	public void changeSoloAct(Smash smash) {
 		SlashAct = Smash.smash;
 		System.out.println("Slash switched his Solo Act to " + SlashAct);
-		Act.smash();
-
 	}
 
 	@Override
 	public void chagenSoloAct(Stage stage) {
 		SlashAct = Stage.stage;
 		System.out.println("Slash switched his Solo Act to " + SlashAct);
-		Act.stage();
 	}
 
 	@Override
 	public void changeSoloAct(Fire fire) {
 		SlashAct = Fire.fire;
 		System.out.println("Slash switched his Solo Act to " + SlashAct);
-		Act.fire();
 
 	}
 }

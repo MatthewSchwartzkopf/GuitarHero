@@ -2,9 +2,8 @@
 public class Stage implements Act {
 
 	static String stage = "Stage";
-	
-	@Override
-	public void act() {
-		System.out.println("jumped off the stage!!!!!!");
+
+	public void act(String name) {
+		System.out.println(name + " jumped off the stage!");
 	}
 }
