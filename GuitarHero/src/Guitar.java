@@ -2,7 +2,7 @@
 public interface Guitar {
 
 	Guitar GibsonSG = new GibsonSG();
-	Guitar GibsonFlyingV = new GibsonFlyingV();
+	GibsonFlyingV GibsonFlyingV = new GibsonFlyingV();
 	Guitar FenderTelecaster = new FenderTelecaster();
 
 	public void playGuitar();

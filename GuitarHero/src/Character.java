@@ -1,7 +1,5 @@
 
-public interface Character {
-
-	Slash slash = new Slash();
+public interface Character extends Guitar, Act{
 
 	public void playGuitar();
 

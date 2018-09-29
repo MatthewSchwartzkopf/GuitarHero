@@ -1,13 +1,13 @@
 
 public class JimiHendrix implements Character {
 
-	String JimiGuitar = null;
+	Guitar JimiGuitar = null;
 	String JimiAct = null;
 	String JimiName = "Jimi Hendrix";
-			
+
 	public JimiHendrix() {
 		// Sets default values
-		JimiGuitar = GibsonFlyingV.GibsonFlyingV;
+		JimiGuitar = Character.GibsonFlyingV;
 		JimiAct = Smash.smash;
 	}
 
@@ -28,20 +28,20 @@ public class JimiHendrix implements Character {
 
 	@Override
 	public void changeGuitar(GibsonSG type) {
-		JimiGuitar = GibsonSG.GibsonSG;
-		System.out.println("Jimi switched to a " + GibsonSG.GibsonSG);
+		JimiGuitar = Guitar.GibsonSG;
+		System.out.println("Jimi switched to a " + Guitar.GibsonSG);
 	}
 
 	@Override
 	public void changeGuitar(GibsonFlyingV type) {
-		JimiGuitar = GibsonFlyingV.GibsonFlyingV;
-		System.out.println("Jimi switched to a " + GibsonFlyingV.GibsonFlyingV);
+		JimiGuitar = Character.GibsonFlyingV;
+		System.out.println("Jimi switched to a " + GibsonFlyingV);
 	}
 
 	@Override
 	public void changeGuitar(FenderTelecaster type) {
-		JimiGuitar = FenderTelecaster.FenderTelecaster;
-		System.out.println("Jimi switched to a " + FenderTelecaster.FenderTelecaster);
+		JimiGuitar = Guitar.FenderTelecaster;
+		System.out.println("Jimi switched to a " + Guitar.FenderTelecaster);
 	}
 
 	@Override
@@ -63,6 +63,12 @@ public class JimiHendrix implements Character {
 		JimiAct = Fire.fire;
 		System.out.println("Slash switched his Solo Act to " + Fire.fire);
 
+	}
+
+	@Override
+	public void act(String name) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

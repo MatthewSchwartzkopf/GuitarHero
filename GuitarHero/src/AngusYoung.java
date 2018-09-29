@@ -1,12 +1,12 @@
 
 public class AngusYoung implements Character {
 
-	String AngusGuitar = null;
+	Guitar AngusGuitar = null;
 	String AngusAct = null;
 	String AngusName = "Angus Young";
 
 	public AngusYoung() {
-		AngusGuitar = FenderTelecaster.FenderTelecaster;
+		AngusGuitar = Guitar.FenderTelecaster;
 		AngusAct = Fire.fire;
 	}
 
@@ -17,19 +17,19 @@ public class AngusYoung implements Character {
 
 	@Override
 	public void changeGuitar(GibsonSG gibsonSG) {
-		AngusGuitar = GibsonSG.GibsonSG;
+		AngusGuitar = Guitar.GibsonSG;
 		System.out.println("Angus switch to a " + gibsonSG);
 	}
 
 	@Override
 	public void changeGuitar(GibsonFlyingV type) {
-		AngusGuitar = GibsonFlyingV.GibsonFlyingV;
+		AngusGuitar = Character.GibsonFlyingV;
 		System.out.println("Angus switched to a " + type);
 	}
 
 	@Override
 	public void changeGuitar(FenderTelecaster type) {
-		AngusGuitar = FenderTelecaster.FenderTelecaster;
+		AngusGuitar = Guitar.FenderTelecaster;
 		System.out.println("Angus switched to a " + type);
 
 	}
@@ -58,5 +58,11 @@ public class AngusYoung implements Character {
 	@Override
 	public void changeSoloAct(Fire fire) {
 		System.out.println("Angus Young switched her Solo Act to " + Fire.fire);
+	}
+
+	@Override
+	public void act(String name) {
+		// TODO Auto-generated method stub
+		
 	}
 }

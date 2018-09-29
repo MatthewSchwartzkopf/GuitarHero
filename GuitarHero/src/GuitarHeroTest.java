@@ -17,8 +17,10 @@ public class GuitarHeroTest {
 		player3.playGuitar();
 		player3.changeGuitar(new FenderTelecaster());
 		player3.act();
-
+		
 		player1.changeSoloAct(new Smash());
+		player1.act();
+		player2.changeSoloAct(new Smash());
 	}
 
 	public GuitarHeroTest() {
