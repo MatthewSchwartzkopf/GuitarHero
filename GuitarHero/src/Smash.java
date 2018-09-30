@@ -15,7 +15,7 @@
 
 public class Smash implements Act {
 
-	static String smash = "Smash";
+	static String mSmash = "Smash";
 
 	public Smash() {
 		// TODO Auto-generated constructor stub

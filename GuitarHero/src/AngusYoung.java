@@ -21,7 +21,7 @@ public class AngusYoung implements Character {
 
 	public AngusYoung() {
 		AngusGuitar = Guitar.FenderTelecaster;
-		AngusAct = Fire.fire;
+		AngusAct = Fire.mFire;
 	}
 
 	@Override
@@ -50,9 +50,9 @@ public class AngusYoung implements Character {
 
 	@Override
 	public void act() {
-		if (AngusAct == Fire.fire)
+		if (AngusAct == Fire.mFire)
 			Act.fire(AngusName);
-		else if (AngusAct == Smash.smash)
+		else if (AngusAct == Smash.mSmash)
 			Act.smash(AngusName);
 		else
 			Act.stage(AngusName);
@@ -60,20 +60,20 @@ public class AngusYoung implements Character {
 
 	@Override
 	public void changeSoloAct(Smash smash) {
-		AngusAct = Smash.smash;
-		System.out.println("Angus Young switched her Solo Act to " + Smash.smash);
+		AngusAct = Smash.mSmash;
+		System.out.println("Angus Young switched her Solo Act to " + Smash.mSmash);
 	}
 
 	@Override
 	public void chagenSoloAct(Stage stage) {
-		AngusAct = Stage.stage;
-		System.out.println("Angus Young switched her Solo Act to " + Stage.stage);
+		AngusAct = Stage.mStage;
+		System.out.println("Angus Young switched her Solo Act to " + Stage.mStage);
 	}
 
 	@Override
 	public void changeSoloAct(Fire fire) {
-		AngusAct = Fire.fire;
-		System.out.println("Angus Young switched her Solo Act to " + Fire.fire);
+		AngusAct = Fire.mFire;
+		System.out.println("Angus Young switched her Solo Act to " + Fire.mFire);
 	}
 
 	@Override

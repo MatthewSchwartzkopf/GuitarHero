@@ -15,9 +15,9 @@
 
 public interface Guitar {
 
-	GibsonSG GibsonSG = new GibsonSG();
-	GibsonFlyingV GibsonFlyingV = new GibsonFlyingV();
-	FenderTelecaster FenderTelecaster = new FenderTelecaster();
+	Guitar GibsonSG = new GibsonSG();
+	Guitar GibsonFlyingV = new GibsonFlyingV();
+	Guitar FenderTelecaster = new FenderTelecaster();
 
 	public static void GibsonSG() {
 	}

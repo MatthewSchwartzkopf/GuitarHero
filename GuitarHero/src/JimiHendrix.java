@@ -22,7 +22,7 @@ public class JimiHendrix implements Character {
 	public JimiHendrix() {
 		// Sets default values
 		JimiGuitar = Character.GibsonFlyingV;
-		JimiAct = Smash.smash;
+		JimiAct = Smash.mSmash;
 	}
 
 	@Override
@@ -32,9 +32,9 @@ public class JimiHendrix implements Character {
 
 	@Override
 	public void act() {
-		if (JimiAct == Fire.fire)
+		if (JimiAct == Fire.mFire)
 			Act.fire(JimiName);
-		else if (JimiAct == Smash.smash)
+		else if (JimiAct == Smash.mSmash)
 			Act.smash(JimiName);
 		else
 			Act.stage(JimiName);
@@ -60,22 +60,22 @@ public class JimiHendrix implements Character {
 
 	@Override
 	public void changeSoloAct(Smash smash) {
-		JimiAct = Smash.smash;
-		System.out.println("Jimi Hendrix switched his Solo Act to " + Smash.smash);
+		JimiAct = Smash.mSmash;
+		System.out.println("Jimi Hendrix switched his Solo Act to " + Smash.mSmash);
 
 	}
 
 	@Override
 	public void chagenSoloAct(Stage stage) {
-		JimiAct = Stage.stage;
-		System.out.println("Jimi Hendrix switched his Solo Act to " + Stage.stage);
+		JimiAct = Stage.mStage;
+		System.out.println("Jimi Hendrix switched his Solo Act to " + Stage.mStage);
 
 	}
 
 	@Override
 	public void changeSoloAct(Fire fire) {
-		JimiAct = Fire.fire;
-		System.out.println("Slash switched his Solo Act to " + Fire.fire);
+		JimiAct = Fire.mFire;
+		System.out.println("Slash switched his Solo Act to " + Fire.mFire);
 
 	}
 
