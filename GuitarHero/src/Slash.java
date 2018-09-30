@@ -1,3 +1,17 @@
+/**
+ * Lab-02 GuitarHero
+ * 
+ * Champlain College CSI-340, Fall 2018
+ * 
+ * Author: Matthew Schwartzkopf And Paul Lindenberg Emails:
+ * matthew.schwartzkopf@mymail.champlain.edu,
+ * paul.lindenberg@mymail.champlain.edu Class : CSI-340 Assignment: Lab 02
+ * GuitarHero Date Assigned: Septermber 27, 2018 Due Date: October 2, 2018
+ * 
+ * Description:
+ * 
+ * This code represents the game GuitarHero using strategy patterns and UML/
+ **/
 
 public class Slash implements Character {
 
@@ -29,19 +43,19 @@ public class Slash implements Character {
 	@Override
 	public void changeGuitar(GibsonSG guitar) {
 		SlashGuitar = Guitar.GibsonSG;
-		System.out.println("Slash switch to a " + SlashGuitar);
+		System.out.println("Slash switch to a " + guitar.mGibsonSG);
 	}
 
 	@Override
 	public void changeGuitar(GibsonFlyingV guitar) {
-		SlashGuitar = Character.GibsonFlyingV;
-		System.out.println("Slash switch to a " + SlashGuitar);
+		SlashGuitar = Guitar.GibsonFlyingV;
+		System.out.println("Slash switch to a " + guitar.mGibsonFlyingV);
 	}
 
 	@Override
 	public void changeGuitar(FenderTelecaster guitar) {
 		SlashGuitar = Guitar.FenderTelecaster;
-		System.out.println("Slash switched to a " + SlashGuitar);
+		System.out.println("Slash switched to a " + guitar.mFenderTelecaster);
 	}
 
 	@Override
@@ -65,7 +79,5 @@ public class Slash implements Character {
 
 	@Override
 	public void act(String name) {
-		// TODO Auto-generated method stub
-		
 	}
 }
